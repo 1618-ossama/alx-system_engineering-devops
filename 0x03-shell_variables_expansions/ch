@@ -1,0 +1,3 @@
+#!/bin/bash
+last_file=$(ls -lt | head -2 | tail -1 | awk '{print $NF}')
+chmod u+x $last_file
